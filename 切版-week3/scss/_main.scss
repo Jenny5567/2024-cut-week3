@@ -1,0 +1,189 @@
+.container{
+  max-width:1320px ; //1296+12+12=1320
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 0 auto;
+}
+
+// 字體通用樣式
+
+.fs-1{
+  font-size: 36px;
+}
+
+.mb-4{
+  margin-bottom:24px
+}
+
+
+.mb-6{
+  margin-bottom: 36px;
+}
+
+.mr-8{
+  margin-right: 48px;
+}
+
+
+
+//主色
+.color-main{
+  color: #AA0601;
+}
+
+.bg-color-main{
+  background: #AA0601;
+}
+
+.color-second{
+  color:#FBF2F2;
+}
+
+.color-white{
+  color: #fff;
+}
+
+.color-black{
+  color: #000000;
+}
+
+//間距
+.mr-6{
+  margin-right: 24px;
+}
+
+
+//flex
+.d-flex{
+  display: flex;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+
+.ai-center{
+  align-items: center;
+}
+
+
+.jc-sb{
+  justify-content: space-between;
+}
+
+.header{
+  padding: 16px 0;
+}
+
+.logo{
+  width: 80px;
+}
+
+
+
+.nav-list{
+  gap:64px;
+  a{
+    color:#FBF2F2;
+    &:hover{
+      color: #d4cccc;
+    }
+  }
+}
+
+.clasify-list{
+  li{
+    text-align: center;
+    width: 33.33%;
+    border: 1px solid #DCDCDC;
+    &:hover{
+      border-bottom: 8px #AA0601 solid;
+    }
+  }
+  a{
+    width: 100%;
+    padding: 24px;
+  }
+}
+
+@media (max-width:576px) {
+  .logo{
+    margin: 0px 0px 12px 12px;
+  }
+  .nav-container{
+    max-width: 100%;
+    padding: 0;
+  }
+  .nav{
+    flex-direction: column;
+  }
+  .nav-list {
+    gap:0;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+    li {
+      width: 50%;
+      border: 1px solid #fff;
+      a{
+        padding: 24px 0px;
+        width: 100%;
+        text-align: center;
+      }
+    } 
+  }
+  
+
+}
+
+
+.content{
+  height: 400px;
+}
+
+// footer
+.footer{
+  padding: 60px 0px;
+}
+
+.footer-list{
+  gap:48px;
+  a{
+    color:#fff;
+  }
+}
+
+.material-icons{
+  margin-right: 20px;
+}
+
+.social-list{
+    gap:32px;
+  img{
+    height: 48px;
+  }
+}
+
+.contact{
+  color: #fff;
+}
+
+@media (max-width:768px) {
+  .contact span{
+    font-size: 16px;
+  }
+  .footer-list{
+    display: none;
+  }
+  .social-list{
+    gap:8px;
+  img{
+    height: 24px;
+  }
+}
+  .copyright,.privacy{
+    flex-direction: column;
+    gap: 8px;
+  }
+}
